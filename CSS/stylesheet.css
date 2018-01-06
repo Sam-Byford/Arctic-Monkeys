@@ -1,0 +1,1552 @@
+body, html {
+    height:100%;
+    width:100%;
+    margin:auto;
+    background-color:black;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+ol{
+    color:white;
+}
+/*Header at top of page with bottom border*/
+.header{
+    width:100%;
+    background-color:#15191A;
+    top:0;
+    overflow:hidden;
+    position:relative;
+    border-bottom: thick solid white;
+}
+/*logo in top left of header*/
+.logo{
+    float:left;
+    margin-left:15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+/*Navigation moved to center of header*/
+.navigation{
+    float:left;
+    border-style:solid;
+    border-color:white;
+    transform: translate(100px, 65px);
+    height:40px;
+}
+/*social stuck to top right of header*/
+.social{
+    float: right;
+    position: absolute;
+    right:0;
+    top:0;
+    list-style: none;
+    padding:0px;
+    width:auto;
+}
+/*All a tags given white text and link effect removed*/
+a {
+    text-decoration: none;
+    color:white;
+}
+/*All a tags given white text and link effect removed when hovered over*/
+a:visited {
+    text-decoration: none; color:white;
+}
+/*Positioning of list elements in the header*/
+.header li{
+    list-style:none;
+    float:left;
+    padding-right:50px;
+    padding-left:50px;
+    color:white;
+}
+.social li{
+    padding-right:25px;
+    padding-left:25px;
+}
+.navigation li{
+    padding-bottom:15px;
+}
+/*Video centered to top middle of index page*/
+.video{
+    width:100%;
+    background-color:#030103;
+    margin-top:30px;
+    position:relative;
+    height:320px;
+}
+.introvid{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:700px;
+    height:320px;
+}
+/*Main bulk of index page set just under video*/
+#main{
+    padding-top:15px;
+    position:relative;
+    width:100%;
+}
+/*each tab given its width, height and positioning on the page*/
+.tabs {
+    width:100%;
+}
+.tabs div{
+    padding-bottom:20px;
+    width:300px;
+    height:150px;
+    display:inline-block;
+    box-sizing:border-box;
+    border-style:solid;
+    border-color:white;
+    background-size:300px 180px;
+    margin-bottom:5px;
+}
+.tabs div h3{
+    text-align: center;
+    margin-top:20%;
+}
+h3{
+    color:white;
+}
+/*Appropriate background image set to each tab*/
+.DISCOGRAPHY{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,200px);
+    margin-left:-350px;
+    background-image:url('https://s4.favim.com/orig/150130/arabella-arctic-monkeys-band-cool-Favim.com-2430664.jpg');
+}
+.VIDEOS{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,200px);
+    background-image:url('https://static.spin.com/files/131024-arctic-monkeys-one-road-video-am.jpg');
+}
+.PHOTOS{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,200px);
+    margin-left:350px;
+    background-image:url('http://woof-mag.com/wp-content/uploads/2014/02/Screen-Shot-2014-02-12-at-3.14.42-PM.png');
+}
+
+/*Title set to 25% of the page size with a bottom border differentiating it from the gigs */
+.title{
+    padding-top:5px;
+    padding-left:15px;
+    width:25%;
+    border-bottom:thick dotted white;
+}
+/*Each list item is given padding to separate it from the elements above and below it. Font is set and color is white so it shows up on dark background*/
+.Gigs ul li{
+    padding:3px;
+    color:white;
+    font-size:15px;
+}
+/*background image for gigs page is set to 100% of page width*/
+.container{
+    height:100%;
+    position:relative;
+    background:url('https://www.japantimes.co.jp/wp-content/uploads/2014/08/p10-st.-michel-summer-sonic-c-20140820.jpg') no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title h1{
+    color:white;
+}
+
+/*Grid for discography albums is created and each column and row width is set*/
+.ALBUMS{
+    height:642px;
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:0;
+}
+.ALBUMS div{
+    width:421px;
+    height:321px;
+    background-repeat:no-repeat;
+    background-size:421px 321px;
+}
+.ALBUM_INFO{
+    position:absolute;
+    color:white;
+}
+/*Overlay effect is created by creating a partially transparent div over the page*/
+.ALBUM_INFO div div{
+    height:321px;
+    width:421px;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
+h3{
+    text-align: center;
+}
+/*Each albums information is positioned above that corresponding album. An overlay effect is also created over each album*/
+#info-1{
+    position:absolute;
+    display:none;
+}
+#text-1{
+    transform:translate(0px,-642px);
+}
+#info-2{
+    position:absolute;
+    display:none;
+}
+#text-2{
+    transform:translate(421px,-642px);
+}
+#info-3{
+    position:absolute;
+    display:none;
+}
+#text-3{
+    transform:translate(842px,-642px);
+}
+#info-4{
+    position:absolute;
+    display:none;
+}
+#text-4{
+    height:322px;
+    transform:translate(0px,-322px);
+}
+#info-5{
+    position:absolute;
+    display:none;
+}
+#text-5{
+    transform:translate(421.5px,-322px);
+}
+/*Background image set on each grid item displaying that albums artwork*/
+.grid-item-1{
+    background-image:url('https://img.discogs.com/87LbbK5gmrESyWqUy2x7Kir0zRM=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1004089-1408382754-6532.jpeg.jpg');
+}
+.grid-item-2{
+    background-image:url('https://is5-ssl.mzstatic.com/image/thumb/Music/6e/6e/d4/mzi.hozudery.jpg/1200x630bb.jpg');
+}
+.grid-item-3{
+    background-image:url('http://cdn.everyjoe.com/files/2009/07/arctic-monkeys-humbug-album-cover.jpg');
+}
+.grid-item-4{
+    background-image:url('https://images-na.ssl-images-amazon.com/images/I/31vdma1w3RL.jpg');
+}
+.grid-item-5{
+    background-image:url('https://img.apmcdn.org/80ef67f5910de61be7dbb1a1adfdb4253e08dad4/uncropped/59c5f0-20130929-arctic-monkeys-am-album-cover-art.jpg');
+}
+.grid-item-6{
+    position:relative;
+    text-align:center;
+    color:white;
+    background-image: url('https://media.pitchfork.com/photos/5935a128d4294b0bc2dda2b3/master/w_790/bf613b04.jpg');
+}
+/*Cursor is set to pointer when the albums are hovered over to show the user that clicking them will trigger an event*/
+.ALBUMS div:hover{
+    cursor:pointer;
+}
+.ALBUM_INFO div div:hover{
+    cursor:pointer;
+}
+.grid-item-6:hover{
+    cursor:auto;
+}
+/*Customise button is positioned in the final div*/
+#Customise_Button{
+    font-size:25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 25px);
+    border-style:solid;
+    border-color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/*The songs are moved away from the border of the grid slightly*/
+.grid-selector div ol{
+    transform:translate(0px,-18px);
+}
+/*grid is created for the 'customiser' page and each column and row width is set*/
+.grid-selector{
+    height:1284px;
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:0;
+}
+.grid-selector div{
+    width:421px;
+    height:321px;
+    background-repeat:no-repeat;
+    background-size:421px 321px;
+}
+/*Information is positioned in its div*/
+#selector-info{
+    font-size:25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-style:solid;
+    border-color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+    width:350px;
+}
+.information{
+    position:relative;
+    text-align:center;
+    color:white;
+}
+/*Final grid item has font color set to white so text displays*/
+.grid-item-7{
+    position:relative;
+    text-align:center;
+    color:white;
+}
+.grid-item-7 p{
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    margin-bottom:50px;
+    padding-left:45px;
+}
+/*Overwrite div and the overlays are created and positioned on the page correctly*/
+#confirm-button{
+    font-size:25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60px);
+    border-style:solid;
+    border-color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+#overlay {
+    position:absolute;
+    display: none;
+    width: 100%;
+    height: 1282px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    transform:translate(0px,809.5px);
+}
+#overlay_text{
+    position:relative;
+    height:400px;
+    width:500px;
+    background-color:grey;
+    transform:translate(380px,300px);
+}
+#confirmation{
+    position:absolute;
+    z-index:2;
+    display:none;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform:translate(0px,-1283px);
+    height: 1282px;
+    width: 100%;
+}
+#confirmation-text{
+    height:100px;
+    width:450px;
+    text-align: center;
+    background-color:grey;
+    transform:translate(405px,800px);
+}
+#confirmation button{
+    margin-top: 10px;
+}
+#1{
+    float:left;
+}
+#2{
+    float:right;
+}
+/*view button set below finished button*/
+#view{
+    display:none;
+    font-size:20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,20px);
+    border-style:solid;
+    border-color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/*elements inside of overlay_text div are positioned and style appropriately to the size of the window*/
+#insert_image{
+    position:absolute;
+    margin-bottom:5px;
+    bottom:0;
+    right:0;
+    transform:translate(-40px);
+}
+#information_text{
+    position:absolute;
+    margin-bottom:5px;
+    margin-left:5px;
+    bottom:0;
+}
+#not_allowed{
+    position:absolute;
+    margin-bottom:5px;
+    margin-left:5px;
+    bottom:0;
+    display:none;
+}
+#ok_button{
+    right:0;
+    margin-right:5px;
+    margin-bottom:5px;
+    bottom: 0;
+    position:absolute;
+}
+#exit{
+    font-size: 20px;
+    top: 0;
+    right:0;
+    position:absolute;
+    margin-right:2px;
+}
+#exit:hover{
+    cursor:pointer;
+    color:red;
+}
+
+/*image is added to top-center of the news page*/
+#image_header{
+    width:100%;
+    height:280px;
+    position:relative;
+}
+#image_header div{
+    margin:auto;
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/4a/32/ea/4a32ea61077ad2abffa77f454f296c25.jpg');
+    height:250px;
+    width:700px;
+    border-style: solid;
+    border-color:white;
+    margin-top:10px;
+    background-size:700px 300px;
+    background-repeat: no-repeat;
+}
+/*News div placed under image header*/
+#News_info{
+    width:100%;
+    height:100%;
+}
+#News_info div{
+    display:inline-block;
+}
+/*news stories are set to cover 3/4 of the page*/
+#stories{
+    width:65%;
+    height:100%;
+    margin-left:25px;
+    margin-bottom:10px;
+}
+#stories p{
+    color:white;
+}
+/*twitter feed set to other 1/4 of page*/
+#twitter_feed{
+    float:right;
+    margin-right:5px;
+    height:100%;
+    width:30%;
+}
+
+/*Video-description format is created with each row having one video and one description*/
+.description p{
+    font-size:20px;
+    text-align:center;
+    padding-left:5px;
+    padding-top:0px;
+    color:white;
+}
+.description{
+    height:319px;
+}
+#Video_grid iframe{
+    width:100%;
+}
+.row div{
+    float:left;
+    width:50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*The photo's are given their dimensions*/
+.photo{
+    margin:auto;
+    display:none;
+    width:800px;
+    height:500px;
+}
+.photo img{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+}
+/*The thumbnails are given their dimensions*/
+.column{
+    width:700px;
+    height:200px;
+}
+.column img{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+#scroll_photos {
+    position: relative;
+    box-sizing: border-box;
+}
+.photo {
+    display: none;
+    box-sizing: border-box;
+}
+.cursor {
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/*previous and next buttons styled to be slightly transparent and placed either side of image*/
+.prev,
+.next {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -180px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    box-sizing: border-box;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+/*image number set to small font and displayed in the top corner of the image*/
+.numbertext {
+    color: grey;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+}
+/*Container where the images caption will be located is given its dimensions and position on the page*/
+.caption-container {
+    text-align:center;
+    background-color: #222;
+    color: white;
+    padding-top:6px;
+    box-sizing: border-box;
+    padding-bottom:10px;
+}
+.thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+}
+.demo {
+    opacity: 0.6;
+    box-sizing: border-box;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+/*Mobile menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+.sidenav a {
+    padding: 4px 4px 4px 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+/*each item is given an affect when hovered over*/
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#menu{
+    display:none;
+}
+/*exit button turns red when hovered over*/
+.sidenav i:hover{
+    color:red;
+}
+
+#overlay_text p{
+    color:white;
+}
+iframe{
+    border:0;
+}
+
+/*Media queries preventing any elements from flowing over one another or the page itself*/
+@media only screen and (min-width: 1800px) {
+    .tabs div {
+        position:fixed;
+        width:25%;
+        height:20%;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .DISCOGRAPHY {
+        transform: translate(-50%, 100px);
+        margin-left:-625px;
+    }
+
+    .VIDEOS{
+        transform:translate(-50%,100px);
+    }
+    .PHOTOS{
+        transform:translate(-50%,100px);
+        margin-left:625px;
+    }
+    .video{
+        height:500px;
+    }
+    .introvid{
+        height:500px;
+        width:1000px;
+    }
+    .social ul li a i{
+        font-size:30px;
+    }
+    #container{
+        height:200px;
+    }
+
+    .navigation {
+        transform: translate(15%, 80px);
+        height:50px;
+    }
+    .navigation li {
+        font-size: 25px;
+    }
+    .logo {
+        width:200px;
+        height:150px;
+    }
+    .logo a img{
+        width:200px;
+        height:150px;
+        transform:translate(0,-10px);
+    }
+}
+@media only screen and (max-width:1279px) and (min-width:1155px){
+    .grid-selector{
+        grid-template-columns: auto auto;
+        position:relative;
+        width:100%;
+    }
+    .grid-selector div{
+        width:521px;
+        height:321px;
+        background-repeat:no-repeat;
+        background-size:521px 321px;
+    }
+    .grid-item-1,
+    .item-1,
+    .grid-item-3,
+    .item-3,
+    .grid-item-5,
+    .item-5 {
+        transform:translate(50px);
+    }
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .grid-item-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .grid-item-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    #confirmation{
+        transform:translate(0px,-1283px);
+        height: 1926px;
+    }
+    #confirmation-text{
+        transform:translate(405px,1500px);
+    }
+    #overlay {
+        height: 1926px;
+        transform:translate(0px,1481px);
+    }
+    #overlay_text{
+        height:400px;
+        width:500px;
+        background-color:grey;
+        transform:translate(380px,600px);
+    }
+}
+@media only screen and (max-width:1279px)and (min-width:596px){
+    .ALBUMS{
+        grid-template-columns: auto;
+        position:relative;
+        width:100%;
+    }
+    .ALBUMS div{
+        width:100%;
+        height:700px;
+        background-repeat:no-repeat;
+        background-size:100% 700px;
+    }
+    #A2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    #A3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    #A4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    #AM{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .ALBUMS a{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    #A1,
+    #A3,
+    #AM{
+        transform:translate(0px);
+    }
+
+    .ALBUM_INFO div div {
+        height: 700px;
+        width: 596px;
+    }
+    #text-1{
+        transform:translate(0px,-704px);
+    }
+    #text-2{
+        transform:translate(0px,-4px)
+    }
+    #text-3{
+        transform:translate(0px,696px)
+    }
+    #text-4{
+        height: 700px;
+        transform:translate(0px,1396px)
+    }
+    #text-5{
+        transform:translate(0px,2096px)
+    }
+}
+@media only screen and (max-width:1186px) and (min-width:756px){
+    .description p {
+        font-size: 15px;
+        text-align: center;
+        padding-left: 5px;
+        padding-top: 0;
+        color: white;
+    }
+}
+@media only screen and (max-width:1155px) and (min-width:1050px){
+    .grid-selector{
+        grid-template-columns: auto auto;
+        position:relative;
+        width:100%;
+    }
+    .grid-selector div{
+        width:421px;
+        height:321px;
+        background-repeat:no-repeat;
+        background-size:421px 321px;
+    }
+    .grid-item-1,
+    .item-1,
+    .grid-item-3,
+    .item-3,
+    .grid-item-5,
+    .item-5 {
+        transform:translate(100px);
+    }
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .grid-item-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .grid-item-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    #confirmation{
+        transform:translate(0px,-1283px);
+        height: 1926px;
+    }
+    #confirmation-text{
+        transform:translate(405px,1500px);
+    }
+    #overlay {
+        height: 1926px;
+        transform:translate(0px,1481px);
+    }
+    #overlay_text{
+        height:400px;
+        width:500px;
+        background-color:grey;
+        transform:translate(280px,800px);
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:861px){
+    .grid-selector{
+        grid-template-columns: auto auto;
+        position:relative;
+        width:100%;
+    }
+    .grid-selector div{
+        width:321px;
+        height:321px;
+        background-repeat:no-repeat;
+        background-size:321px 321px;
+    }
+    .grid-item-1,
+    .item-1,
+    .grid-item-3,
+    .item-3,
+    .grid-item-5,
+    .item-5 {
+        transform:translate(100px);
+    }
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-2{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .grid-item-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .grid-item-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .item-4{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .grid-selector h3,
+    .grid-selector li{
+        font-size: 15px;
+    }
+    .grid-item-7 p{
+        margin-bottom:30px;
+        padding-left:10px;
+    }
+    #overlay{
+        height:1900px;
+        transform:translate(0px,1479px);
+    }
+    #overlay_text{
+        transform:translate(250px,300px);
+    }
+    #confirmation{
+        height:1900px;
+    }
+    #confirmation-text{
+        transform:translate(250px,1400px);
+    }
+    #selector-info{
+        font-size:15px;
+        padding:0;
+        width:300px;
+    }
+    #overlay {
+        height: 1926px;
+        transform:translate(0px,1481px);
+    }
+    #overlay_text{
+        height:400px;
+        width:500px;
+        background-color:grey;
+        transform:translate(280px,800px);
+    }
+
+}
+@media only screen and (max-width:860px){
+    .grid-selector{
+        grid-template-columns: auto;
+        position:relative;
+        width:100%;
+    }
+    .grid-selector div{
+        width:100%;
+        height:500px;
+        background-repeat:no-repeat;
+        background-size:100% 500px;
+        margin:auto;
+    }
+
+    .item-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-item-2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .item-2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .grid-item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .item-3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .grid-item-4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 7;
+    }
+    .item-4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 8;
+        grid-row-end: 8;
+    }
+    .grid-item-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 9;
+        grid-row-end: 9;
+    }
+    .item-5{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 10;
+        grid-row-end: 10;
+    }
+    .grid-item-6{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 11;
+        grid-row-end: 11;
+    }
+    .item-6{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 12;
+        grid-row-end: 12;
+    }
+    .grid-item-7{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 13;
+        grid-row-end: 13;
+    }
+    .item-7{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 14;
+        grid-row-end: 14;
+    }
+
+    .grid-selector h3,
+    .grid-selector li{
+        font-size: 17px;
+    }
+
+    #overlay{
+        height:3322px;
+        transform:translate(0px,2900px);
+    }
+    #overlay_text{
+        transform:translate(180px,300px);
+    }
+    #confirmation{
+        height:3322px;
+    }
+    #confirmation-text{
+        transform:translate(180px,2800px);
+    }
+    .information{
+        width:100%
+    }
+    #selector-info{
+        font-size:25px;
+        width:100%;
+        padding-left:0;
+        padding-right:0;
+    }
+    #confirmation{
+        transform:translate(0px,-1283px);
+        height: 6000px;
+    }
+    #confirmation-text{
+        transform:translate(0px,5700px);
+        width:100%;
+    }
+    #confirm-button{
+        font-size:70px;
+        transform:translate(-50%,-250px);
+    }
+    #view{
+        font-size:50px;
+        transform:translate(-50%,-100px);
+    }
+    #overlay {
+        height: 6000px;
+        transform:translate(0px,5571px);
+    }
+    #overlay_text{
+        height:400px;
+        width:100%;
+        background-color:grey;
+        transform:translate(0px,5450px);
+    }
+
+}
+@media only screen and (max-width:817px) and (min-width:604px){
+    .photo{
+        width:100%;
+    }
+    .column{
+        width:25%;
+        height:180px;
+    }
+
+}
+@media only screen and (max-width:756px){
+    .description p {
+        font-size: 13px;
+        text-align: center;
+        padding-left: 5px;
+        padding-top: 0;
+        color: white;
+    }
+}
+@media only screen and (min-width:740px) and (max-width:1015px) {
+    .navigation {
+        height: 40px;
+        margin-right: 5px;
+        transform: translate(80px, 65px);
+    }
+    .navigation li {
+        padding-bottom: 10px;
+    }
+    .header li {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .DISCOGRAPHY{
+        transform:translate(-50%,250px);
+        margin-left:-250px;
+    }
+    .VIDEOS{
+        transform: translate(-50%,250px);
+    }
+    .PHOTOS {
+        transform: translate(-50%, 250px);
+        margin-left:250px;
+    }
+    .tabs div{
+        height:150px;
+        width:200px;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:720px){
+    #image_header div{
+        height: 100%;
+        width:100%;
+    }
+    #stories{
+        width:100%;
+        height:100%;
+        margin-left:0;
+        margin-bottom:10px;
+    }
+    #twitter_feed{
+        height:100%;
+        width:100%;
+        margin-top:10px;
+    }
+}
+@media only screen and (min-width:667px) and (max-width: 740px) {
+    .navigation {
+        height: 40px;
+        margin-right: 5px;
+        transform: translate(50px, 65px);
+    }
+    .introvid{
+        width:500px;
+        height:220px;
+    }
+    .header li {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .tabs div{
+        height:150px;
+        width:200px;
+        background-repeat: no-repeat;
+    }
+    .DISCOGRAPHY{
+        transform:translate(-50%,200px);
+        margin-left:-225px;
+    }
+    .PHOTOS {
+        transform: translate(-50%, 200px);
+        margin-left:225px;
+    }
+    .VIDEOS {
+        transform: translate(-50%, 200px);
+    }
+}
+@media only screen and (min-width: 604px) and (max-width: 667px){
+    .tabs{
+        height:500px;
+    }
+    .tabs div {
+        padding-bottom: 20px;
+        width:100%;
+        height: 200px;
+        display:inline;
+        background-repeat: no-repeat;
+        background-size:cover;
+        float:left;
+        top:0;
+        left:0;
+        margin-bottom:0;
+    }
+    .tabs div h3{
+        margin-top:60px;
+    }
+    .DISCOGRAPHY {
+        transform: translate(0px,450px);
+        margin-left:0;
+        background-image:url('https://wallup.net/wp-content/uploads/2016/03/03/321584-Arctic_Monkeys.jpg');
+    }
+    .VIDEOS{
+        transform: translate(0px,650px);
+        margin-left:0;
+    }
+    .PHOTOS {
+        transform: translate(0px, 850px);
+        margin-left: 0;
+    }
+    #container{
+        height:100px;
+    }
+
+    .logo {
+        width:100px;
+        height:75px;
+    }
+    .logo a img{
+        width:100px;
+        height:75px;
+
+    }
+    .header{
+        height:100px;
+    }
+    .navigation {
+        height: 40px;
+        margin-right: 0;
+        transform: translate(-50px, 50px);
+    }
+    .header li {
+        font-size:13px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .social li{
+        font-size:10px;
+    }
+    .introvid{
+        width:500px;
+        height:220px;
+    }
+    #menu{
+        display:none;
+    }
+    /*.menu{
+        display:inline;
+        float:right;
+        margin-right:15px;
+        padding-top: 10px;
+        width:100px;
+        height:75px;
+    }*/
+}
+/*MOBILE VERSION*/
+@media only screen and (max-width: 604px){
+    .ALBUMS{
+        grid-template-columns: auto;
+        position:relative;
+        width:100%;
+    }
+    .ALBUMS div{
+        width:100%;
+        height:500px;
+        background-repeat:no-repeat;
+        background-size:100% 500px;
+    }
+    #A2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    #A3{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    #A4{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    #AM{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .ALBUMS a{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    #A1,
+    #A3,
+    #AM{
+        transform:translate(0px);
+    }
+    .ALBUM_INFO div div {
+        height: 500px;
+        width: 250px;
+    }
+    #text-1{
+        transform:translate(0px,-642px);
+    }
+    #text-2{
+        transform:translate(0px,-142px)
+    }
+    #text-3{
+        transform:translate(0px,358px)
+    }
+    #text-4{
+        height: 700px;
+        transform:translate(0px,858px)
+    }
+    #text-5{
+        transform:translate(0px,1358px)
+    }
+
+    .photo{
+        width:100%;
+        height:300px;
+    }
+    .column{
+        width:25%;
+        height:100px;
+    }
+
+    .tabs{
+        height:500px;
+    }
+    .tabs div {
+        padding-bottom: 20px;
+        width:100%;
+        height: 200px;
+        display:inline;
+        background-repeat: no-repeat;
+        background-size:cover;
+        float:left;
+        top:0;
+        left:0;
+        margin-bottom:0;
+    }
+    .tabs div h3{
+        margin-top:60px;
+    }
+    .DISCOGRAPHY {
+        transform: translate(0px,450px);
+        margin-left:0;
+        background-image:url('https://wallup.net/wp-content/uploads/2016/03/03/321584-Arctic_Monkeys.jpg');
+    }
+    .header{
+        height:100px;
+    }
+
+    .VIDEOS{
+        transform: translate(0px,650px);
+        margin-left:0;
+    }
+    .PHOTOS {
+        transform: translate(0px, 850px);
+        margin-left: 0;
+    }
+    #logo{
+        display:none;
+    }
+    .navigation {
+       display:none;
+    }
+    .header li{
+        display:none
+    }
+
+    .logo #menu {
+        width:100px;
+        height:75px;
+        cursor:pointer;
+    }
+    #close{
+        cursor:pointer;
+    }
+    .introvid{
+        width:100%;
+        height:100%;
+    }
+
+    .description p{
+        font-size:14px;
+        text-align:center;
+        padding-left:5px;
+        padding-top:0px;
+        color:white;
+    }
+    .description{
+        height:319px;
+    }
+    #Video_grid iframe{
+        width:100%;
+    }
+    .row div{
+        height:300px;
+        width:100%;
+    }
+    .row:after {
+        content:none;
+        display: block;
+        clear: none;
+    }
+    #video_5{
+        transform:translate(0px,-150px);
+    }
+    #video_7{
+        transform:translate(0px,-100px);
+    }
+    #video_2{
+        transform:translate(0px,-180px);
+    }
+}
