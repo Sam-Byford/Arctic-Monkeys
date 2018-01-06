@@ -2,7 +2,7 @@ window.onload = function() {
     //variables created and some elements added to the HTML file
     var retrievedObject;
     var background = $('<img id="background">');
-    $('#overlay_text').append("<div id='artwork'></div>");
+    var overlay = $('#overlay_text').append("<div id='artwork'></div>");
     var size = 'small';
     var allowedToExit=false;
     var override = false;
@@ -451,8 +451,8 @@ window.onload = function() {
                 }
                 //the song is added to an li element then added to the list and the list is then added to the over_text window
                 var item = document.createElement('li');
-                item.append(information[i]);
-                $('#newList').append(item);
+                var tempo = item.append(information[i]);
+                var tempo2 =$('#newList').append(item);
             }
             //the list is moved away from the window border
             $('#newList').css({
