@@ -117,13 +117,13 @@ window.onload = function() {
         else if (localStorage.length>0) {
             document.getElementById("confirmation").style.display="block";
             //if they wish to overwrite the album is created
-            $("#1").off('click').on('click', function(event){
+            $("#Yes").off('click').on('click', function(event){
                 event.preventDefault();
                 createAlbum();
                 document.getElementById("confirmation").style.display="none";
             });
             //if they dont wish to overwrite nothing happens and the confirmation box disappears
-            $("#2").off('click').on('click', function(event){
+            $("#No").off('click').on('click', function(event){
                 event.preventDefault();
                 document.getElementById("confirmation").style.display="none";
             });
