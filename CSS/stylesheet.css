@@ -5,13 +5,6 @@ body, html {
     background-color:black;
     font-family:Helvetica, Arial, sans-serif;
 }
-#report_container p{
-    color:white;
-}
-.screenshot{
-    width:303px;
-    height:200px
-}
 ol{
     color:white;
 }
@@ -649,7 +642,13 @@ h3{
 iframe{
     border:0;
 }
-
+#report_container p{
+    color:white;
+}
+.screenshot{
+    width:303px;
+    height:200px
+}
 /*Media queries preventing any elements from flowing over one another or the page itself*/
 @media only screen and (min-width: 1800px) {
     .tabs div {
