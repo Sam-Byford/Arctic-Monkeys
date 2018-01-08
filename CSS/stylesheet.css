@@ -5,7 +5,13 @@ body, html {
     background-color:black;
     font-family:Helvetica, Arial, sans-serif;
 }
-
+#report_container p{
+    color:white;
+}
+.screenshot{
+    width:303px;
+    height:200px
+}
 ol{
     color:white;
 }
