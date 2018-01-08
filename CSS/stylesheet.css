@@ -154,9 +154,6 @@ h3{
     height:100%;
     position:relative;
     background:url('http://www.seattlemusicnews.com/wp-content/uploads/2014/08/artic-monkeys-seattle-concert-2601.jpg') no-repeat center center fixed ;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 .title h1{
