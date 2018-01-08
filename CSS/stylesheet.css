@@ -373,12 +373,7 @@ h3{
 #confirmation button{
     margin-top: 10px;
 }
-#Yes{
-    float:left;
-}
-#No{
-    float:right;
-}
+
 /*view button set below finished button*/
 #view{
     display:none;
