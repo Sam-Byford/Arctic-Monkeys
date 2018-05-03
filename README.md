@@ -1,4 +1,4 @@
-# Arctic-Monkeys
+# Arctic Monkeys
 
 For the first-year Web Authoring module, a lecturer asked us to design and develop a completly new, responsive, website based on a brand or a band. I chose to develop my website around the Arctic Monkeys. This decision was made due to the Arctic Monkeys current website being lackluture and having an extremly ugly user interface.
 
