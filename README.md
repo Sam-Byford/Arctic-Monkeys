@@ -5,6 +5,3 @@ For my first-year Web Authoring module, a lecturer asked us to design and develo
 The website was developed over the course of three months using HTML5. The main feature of the site is the "Discography" section which allows the user to create and personalise their own unique Arctic Monkeys Album.
 
 The project allowed me to use, and improve, my skills of HTML, CSS and JavaScript.
-
-Website Link: https://sam-byford.github.io/AM/
-
